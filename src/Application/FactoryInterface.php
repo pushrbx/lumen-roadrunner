@@ -2,7 +2,7 @@
 
 namespace pushrbx\LumenRoadRunner\Application;
 
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 interface FactoryInterface
 {

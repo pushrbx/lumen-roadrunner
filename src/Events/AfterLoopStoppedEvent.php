@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace pushrbx\LumenRoadRunner\Events;
 
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 final class AfterLoopStoppedEvent implements Contracts\WithApplication
 {

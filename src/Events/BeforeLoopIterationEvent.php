@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace pushrbx\LumenRoadRunner\Events;
 
 use Psr\Http\Message\ServerRequestInterface;
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 final class BeforeLoopIterationEvent implements Contracts\WithApplication, Contracts\WithServerRequest
 {

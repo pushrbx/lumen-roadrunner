@@ -10,10 +10,9 @@ use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use Spiral\RoadRunner\Http\PSR7Worker;
 use Psr\Http\Message\ServerRequestInterface;
-use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 /**
  * Idea is taken from the package: https://github.com/swooletw/laravel-swoole.
@@ -196,9 +195,10 @@ class Worker implements WorkerInterface
 
     /**
      * @param ApplicationContract $app
-     * @param object              $event
+     * @param object $event
      *
      * @return void
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     protected function fireEvent(ApplicationContract $app, object $event): void
     {

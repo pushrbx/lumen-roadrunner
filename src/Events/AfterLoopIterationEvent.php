@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpResponse;
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 final class AfterLoopIterationEvent implements WithApplication, WithHttpRequest, WithHttpResponse
 {

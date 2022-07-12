@@ -9,7 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithException;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithServerRequest;
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 final class LoopErrorOccurredEvent implements WithApplication, WithException, WithServerRequest
 {
