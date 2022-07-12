@@ -23,31 +23,6 @@ $ php ./artisan vendor:publish --provider='pushrbx\LumenRoadRunner\ServiceProvid
 
 **Important**: despite the fact that worker allows you to refresh application instance on each HTTP request _(if worker started with option `--refresh-app`, eg.: `php ./vendor/bin/rr-worker start --refresh-app`)_, we strongly recommend avoiding this for performance reasons. Large applications can be hard to integrate with RoadRunner _(you must decide which of service providers must be reloaded on each request, avoid "static optimization" in some cases)_, but it's worth it.
 
-### Upgrading guide
-
-#### **v4.x** &rarr; **v5.x**
-
-- Update current package in your application:
-    - `composer remove spiral/roadrunner-laravel`
-    - `composer require spiral/roadrunner-laravel "^5.0"`
-- Update package configuration file (`roadrunner.php`; take a look for actual example in current repository)
-
-#### **v3.x** &rarr; **v4.x**
-
-- Update current package in your application:
-    - `composer remove spiral/roadrunner-laravel`
-    - `composer require spiral/roadrunner-laravel "^4.0"`
-- Update your `.rr.yaml` config (take a look for sample [here][roadrunner_config]) - a lot of options was changed
-    - Optionally change relay to socket or TCP port:
-      > ```yaml
-    > server:
-    >   command: "php ./vendor/bin/rr-worker start --relay-dsn unix:///var/run/rr-relay.sock"
-    >   relay: "unix:///var/run/rr-relay.sock"
-    > ```
-- Update RR binary file (using [`roadrunner-cli`][roadrunner-cli] or download from [binary releases][roadrunner-binary-releases] page) up to `v2.x`
-- Update RoadRunner starting (`rr serve ...`) flags - `-v` and `-d` must be not used anymore
-- In your application code replace `Spiral\RoadRunner\PSR7Client` with `Spiral\RoadRunner\Http\PSR7Worker`
-
 ## Usage
 
 After package installation you can use provided "binary" file as RoadRunner worker: `./vendor/bin/rr-worker`. This worker allows you to interact with incoming requests and outgoing responses using [laravel events system][laravel_events]. Event contains:
