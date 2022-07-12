@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Illuminate\Contracts\Foundation\Application;
+use Laravel\Lumen\Application;
 use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use pushrbx\LumenRoadRunner\Listeners\ResetProvidersListener;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
