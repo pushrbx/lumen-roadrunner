@@ -39,7 +39,7 @@ After package installation you can use provided "binary" file as RoadRunner work
 
 Simple `.rr.yaml` config example ([full example can be found here][roadrunner_config]):
 
-> For `windows` path must be full (eg.: `php vendor/spiral/roadrunner-laravel/bin/rr-worker start`)
+> For `windows` path must be full (eg.: `php vendor/pushrbx/lumen-roadrunner/bin/rr-worker start`)
 
 ```yaml
 version: "2.7"
