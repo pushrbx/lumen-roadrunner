@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Laravel\Scout\EngineManager as ScoutEngineManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\ResetLaravelScoutListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetLaravelScoutListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetLaravelScoutListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetLaravelScoutListener
  */
 class ResetLaravelScoutListenerTest extends AbstractListenerTestCase
 {

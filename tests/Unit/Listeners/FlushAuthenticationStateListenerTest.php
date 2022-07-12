@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\FlushAuthenticationStateListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\FlushAuthenticationStateListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushAuthenticationStateListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushAuthenticationStateListener
  */
 class FlushAuthenticationStateListenerTest extends AbstractListenerTestCase
 {

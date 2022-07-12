@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Events;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Events;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Spiral\RoadRunnerLaravel\Events\Contracts;
-use Spiral\RoadRunnerLaravel\Events\AfterRequestHandlingEvent;
+use pushrbx\LumenRoadRunner\Events\Contracts;
+use pushrbx\LumenRoadRunner\Events\AfterRequestHandlingEvent;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Events\AfterRequestHandlingEvent
+ * @covers \pushrbx\LumenRoadRunner\Events\AfterRequestHandlingEvent
  */
-class AfterRequestHandlingEventTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class AfterRequestHandlingEventTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

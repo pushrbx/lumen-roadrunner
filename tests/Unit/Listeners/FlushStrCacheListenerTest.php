@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Illuminate\Support\Str;
-use Spiral\RoadRunnerLaravel\Listeners\FlushStrCacheListener;
+use pushrbx\LumenRoadRunner\Listeners\FlushStrCacheListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushStrCacheListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushStrCacheListener
  */
 class FlushStrCacheListenerTest extends AbstractListenerTestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\StackInterface;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\FlushDumperStackListener;
+use pushrbx\LumenRoadRunner\Dumper\Stack\StackInterface;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\FlushDumperStackListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushDumperStackListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushDumperStackListener
  */
 class FlushDumperStackListenerTest extends AbstractListenerTestCase
 {

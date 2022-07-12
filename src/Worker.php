@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel;
+namespace pushrbx\LumenRoadRunner;
 
 use Throwable;
 use Illuminate\Http\Request;
@@ -21,7 +21,7 @@ use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 class Worker implements WorkerInterface
 {
     /**
-     * Laravel application factory.
+     * Lumen application factory.
      */
     protected Application\FactoryInterface $app_factory;
 
@@ -100,8 +100,6 @@ class Worker implements WorkerInterface
 
             $this->setApplicationInstance($sandbox);
 
-            /** @var HttpKernelContract $http_kernel */
-            $http_kernel = $sandbox->make(HttpKernelContract::class);
             /** @var ConfigRepository $config */
             $config = $sandbox->make(ConfigRepository::class);
 
@@ -110,12 +108,13 @@ class Worker implements WorkerInterface
                 $request = Request::createFromBase($this->http_factory_symfony->createRequest($req));
 
                 $this->fireEvent($sandbox, new Events\BeforeRequestHandlingEvent($sandbox, $request));
-                $response = $http_kernel->handle($request);
+                $sandbox->instance('request', $request);
+                $response = $sandbox->handle($request);
                 $this->fireEvent($sandbox, new Events\AfterRequestHandlingEvent($sandbox, $request, $response));
 
                 $psr7_worker->respond($this->http_factory_psr7->createResponse($response));
                 $responded = true;
-                $http_kernel->terminate($request, $response);
+                // $http_kernel->terminate($request, $response);
 
                 $this->fireEvent($sandbox, new Events\AfterLoopIterationEvent($sandbox, $request, $response));
             } catch (Throwable $e) {

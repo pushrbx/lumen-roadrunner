@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Broadcasting\BroadcastManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindBroadcastManagerListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindBroadcastManagerListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindBroadcastManagerListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindBroadcastManagerListener
  */
 class RebindBroadcastManagerListenerTest extends AbstractListenerTestCase
 {

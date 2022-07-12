@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Translation\Translator;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\FlushTranslatorCacheListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\FlushTranslatorCacheListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushTranslatorCacheListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushTranslatorCacheListener
  */
 class FlushTranslatorCacheListenerTest extends AbstractListenerTestCase
 {

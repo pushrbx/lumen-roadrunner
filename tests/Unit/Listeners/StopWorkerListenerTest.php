@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Spiral\RoadRunner\Http\PSR7Worker;
-use Spiral\RoadRunnerLaravel\Listeners\StopWorkerListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\StopWorkerListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\StopWorkerListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\StopWorkerListener
  */
 class StopWorkerListenerTest extends AbstractListenerTestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Console\Commands;
+namespace pushrbx\LumenRoadRunner\Console\Commands;
 
 use InvalidArgumentException;
 use Symfony\Component\Console\Input\InputOption;
@@ -85,7 +85,7 @@ class StartCommand extends \Symfony\Component\Console\Command\Command
      */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $options = new \Spiral\RoadRunnerLaravel\WorkerOptions(
+        $options = new \pushrbx\LumenRoadRunner\WorkerOptions(
             $this->getLaravelBasePath($input),
             $this->getRefreshApp($input),
             $this->getRelayDSN($input),

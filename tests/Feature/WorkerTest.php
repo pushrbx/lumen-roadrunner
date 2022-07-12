@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Feature;
+namespace pushrbx\LumenRoadRunner\Tests\Feature;
 
 use Illuminate\Support\Str;
 use GuzzleHttp\Psr7\Request;
@@ -13,7 +13,7 @@ use Symfony\Component\Process\Process;
 /**
  * @coversNothing
  */
-class WorkerTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class WorkerTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * Path to the RoadRunner binary file.

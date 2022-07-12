@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Events;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Events;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts;
-use Spiral\RoadRunnerLaravel\Events\AfterLoopStoppedEvent;
+use pushrbx\LumenRoadRunner\Events\Contracts;
+use pushrbx\LumenRoadRunner\Events\AfterLoopStoppedEvent;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Events\AfterLoopStoppedEvent
+ * @covers \pushrbx\LumenRoadRunner\Events\AfterLoopStoppedEvent
  */
-class AfterLoopStoppedEventTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class AfterLoopStoppedEventTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

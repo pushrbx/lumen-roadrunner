@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Illuminate\Cache\CacheManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**

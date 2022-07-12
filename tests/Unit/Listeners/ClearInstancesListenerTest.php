@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\ClearInstancesListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ClearInstancesListener;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ClearInstancesListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ClearInstancesListener
  */
 class ClearInstancesListenerTest extends AbstractListenerTestCase
 {

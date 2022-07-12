@@ -6,7 +6,7 @@ namespace rr;
 
 use Illuminate\Container\Container;
 use Spiral\RoadRunner\Http\PSR7Worker;
-use Spiral\RoadRunnerLaravel\Dumper\Dumper;
+use pushrbx\LumenRoadRunner\Dumper\Dumper;
 use Illuminate\Contracts\Container\BindingResolutionException;
 
 if (!\function_exists('\\rr\\dump')) {

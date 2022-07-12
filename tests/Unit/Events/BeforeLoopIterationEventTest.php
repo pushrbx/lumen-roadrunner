@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Events;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Events;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts;
-use Spiral\RoadRunnerLaravel\Events\BeforeLoopIterationEvent;
+use pushrbx\LumenRoadRunner\Events\Contracts;
+use pushrbx\LumenRoadRunner\Events\BeforeLoopIterationEvent;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Events\BeforeLoopIterationEvent
+ * @covers \pushrbx\LumenRoadRunner\Events\BeforeLoopIterationEvent
  */
-class BeforeLoopIterationEventTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class BeforeLoopIterationEventTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

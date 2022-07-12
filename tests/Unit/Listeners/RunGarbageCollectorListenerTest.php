@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
-use Spiral\RoadRunnerLaravel\Listeners\RunGarbageCollectorListener;
+use pushrbx\LumenRoadRunner\Listeners\RunGarbageCollectorListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RunGarbageCollectorListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RunGarbageCollectorListener
  */
 class RunGarbageCollectorListenerTest extends AbstractListenerTestCase
 {

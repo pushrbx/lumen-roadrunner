@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Dumper;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Dumper;
 
 use Illuminate\Support\Str;
 use Illuminate\Routing\Router;
 use Symfony\Component\HttpFoundation\Response;
-use Spiral\RoadRunnerLaravel\Dumper\Middleware;
+use pushrbx\LumenRoadRunner\Dumper\Middleware;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Dumper\Middleware
+ * @covers \pushrbx\LumenRoadRunner\Dumper\Middleware
  */
-class MiddlewareTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class MiddlewareTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     protected Router $router;
 

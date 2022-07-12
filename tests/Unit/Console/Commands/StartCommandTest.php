@@ -1,20 +1,20 @@
 <?php
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Console\Commands;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Console\Commands;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\WorkerOptions;
-use Spiral\RoadRunnerLaravel\WorkerInterface;
+use pushrbx\LumenRoadRunner\WorkerOptions;
+use pushrbx\LumenRoadRunner\WorkerInterface;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
-use Spiral\RoadRunnerLaravel\Console\Commands\StartCommand;
+use pushrbx\LumenRoadRunner\Console\Commands\StartCommand;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Console\Commands\StartCommand<extended>
+ * @covers \pushrbx\LumenRoadRunner\Console\Commands\StartCommand<extended>
  *
  * @group  foo
  */
-class StartCommandTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class StartCommandTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

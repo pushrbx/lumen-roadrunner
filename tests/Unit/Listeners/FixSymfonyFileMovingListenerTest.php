@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Illuminate\Support\Str;
-use Spiral\RoadRunnerLaravel\Listeners\FixSymfonyFileMovingListener;
+use pushrbx\LumenRoadRunner\Listeners\FixSymfonyFileMovingListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FixSymfonyFileMovingListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FixSymfonyFileMovingListener
  */
 class FixSymfonyFileMovingListenerTest extends AbstractListenerTestCase
 {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
-use Spiral\RoadRunnerLaravel\Listeners\FixSymfonyFileValidationListener;
+use pushrbx\LumenRoadRunner\Listeners\FixSymfonyFileValidationListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FixSymfonyFileValidationListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FixSymfonyFileValidationListener
  */
 class FixSymfonyFileValidationListenerTest extends AbstractListenerTestCase
 {

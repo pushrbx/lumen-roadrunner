@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 /**
  * @link https://github.com/laravel/octane/blob/1.x/src/Listeners/FlushMonologState.php
@@ -14,7 +14,7 @@ class FlushMonologStateListener implements ListenerInterface
      */
     public function handle($event): void
     {
-        if ($event instanceof \Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication) {
+        if ($event instanceof \pushrbx\LumenRoadRunner\Events\Contracts\WithApplication) {
             $app = $event->application();
 
             if (!$app->resolved($log_abstract = 'log')) {

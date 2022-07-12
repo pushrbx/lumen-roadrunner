@@ -1,14 +1,14 @@
 <?php
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit;
+namespace pushrbx\LumenRoadRunner\Tests\Unit;
 
-use Spiral\RoadRunnerLaravel\WorkerOptions;
-use Spiral\RoadRunnerLaravel\WorkerOptionsInterface;
+use pushrbx\LumenRoadRunner\WorkerOptions;
+use pushrbx\LumenRoadRunner\WorkerOptionsInterface;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\WorkerOptions<extended>
+ * @covers \pushrbx\LumenRoadRunner\WorkerOptions<extended>
  */
-class WorkerOptionsTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class WorkerOptionsTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

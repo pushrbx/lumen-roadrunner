@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel;
+namespace pushrbx\LumenRoadRunner;
 
 final class Defaults
 {

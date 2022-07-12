@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit;
+namespace pushrbx\LumenRoadRunner\Tests\Unit;
 
 /**
  * @coversNothing
  */
-class WorkerBinaryTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class WorkerBinaryTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     protected string $binary_location = __DIR__ . '/../../bin/rr-worker';
 

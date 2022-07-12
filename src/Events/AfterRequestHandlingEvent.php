@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Events;
+namespace pushrbx\LumenRoadRunner\Events;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpResponse;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpResponse;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 
 final class AfterRequestHandlingEvent implements WithApplication, WithHttpRequest, WithHttpResponse

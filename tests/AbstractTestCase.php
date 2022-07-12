@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests;
+namespace pushrbx\LumenRoadRunner\Tests;
 
 use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Contracts\Console\Kernel;
-use Spiral\RoadRunnerLaravel\ServiceProvider;
+use pushrbx\LumenRoadRunner\ServiceProvider;
 
 abstract class AbstractTestCase extends \Illuminate\Foundation\Testing\TestCase
 {

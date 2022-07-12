@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
-use Spiral\RoadRunnerLaravel\Listeners\ListenerInterface;
+use pushrbx\LumenRoadRunner\Listeners\ListenerInterface;
 
-abstract class AbstractListenerTestCase extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+abstract class AbstractListenerTestCase extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

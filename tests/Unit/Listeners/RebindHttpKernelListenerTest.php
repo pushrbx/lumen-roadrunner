@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Contracts\Http\Kernel as HttpKernel;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindHttpKernelListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindHttpKernelListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindHttpKernelListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindHttpKernelListener
  */
 class RebindHttpKernelListenerTest extends AbstractListenerTestCase
 {

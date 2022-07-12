@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Application;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Application;
 
-use Spiral\RoadRunnerLaravel\Application\Factory;
+use pushrbx\LumenRoadRunner\Application\Factory;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Application\Factory
+ * @covers \pushrbx\LumenRoadRunner\Application\Factory
  */
-class FactoryTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class FactoryTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     protected const LARAVEL_BASE_PATH = __DIR__ . '/../../../vendor/laravel/laravel';
 

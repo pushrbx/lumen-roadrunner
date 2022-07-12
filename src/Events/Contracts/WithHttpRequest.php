@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Events\Contracts;
+namespace pushrbx\LumenRoadRunner\Events\Contracts;
 
 use Symfony\Component\HttpFoundation\Request;
 

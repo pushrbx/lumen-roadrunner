@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Tightenco\Ziggy\BladeRouteGenerator;
-use Spiral\RoadRunnerLaravel\Listeners\ResetZiggyListener;
+use pushrbx\LumenRoadRunner\Listeners\ResetZiggyListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetZiggyListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetZiggyListener
  */
 class ResetZiggyListenerTest extends AbstractListenerTestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Database\DatabaseManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindDatabaseManagerListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindDatabaseManagerListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindDatabaseManagerListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindDatabaseManagerListener
  */
 class RebindDatabaseManagerListenerTest extends AbstractListenerTestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Events;
+namespace pushrbx\LumenRoadRunner\Events;
 
 use Psr\Http\Message\ServerRequestInterface;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;

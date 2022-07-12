@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
-use Spiral\RoadRunnerLaravel\Listeners\ListenerInterface;
-use Spiral\RoadRunnerLaravel\Listeners\SendExceptionToStderrListener;
+use pushrbx\LumenRoadRunner\Listeners\ListenerInterface;
+use pushrbx\LumenRoadRunner\Listeners\SendExceptionToStderrListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\SendExceptionToStderrListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\SendExceptionToStderrListener
  */
 class SendExceptionToStderrListenerTest extends AbstractListenerTestCase
 {

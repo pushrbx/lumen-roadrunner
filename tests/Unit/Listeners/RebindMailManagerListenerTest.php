@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Mail\MailManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindMailManagerListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindMailManagerListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindMailManagerListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindMailManagerListener
  */
 class RebindMailManagerListenerTest extends AbstractListenerTestCase
 {

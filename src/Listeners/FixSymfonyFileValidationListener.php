@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 /**
  * @link https://github.com/avto-dev/roadrunner-laravel/issues/10

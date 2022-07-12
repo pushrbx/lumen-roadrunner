@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit;
+namespace pushrbx\LumenRoadRunner\Tests\Unit;
 
-use Spiral\RoadRunnerLaravel\Defaults;
+use pushrbx\LumenRoadRunner\Defaults;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Defaults
+ * @covers \pushrbx\LumenRoadRunner\Defaults
  */
-class DefaultsTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class DefaultsTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

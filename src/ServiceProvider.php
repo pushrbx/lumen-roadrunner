@@ -2,11 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel;
+namespace pushrbx\LumenRoadRunner;
 
-use Illuminate\Contracts\Http\Kernel;
-use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
+use Laravel\Lumen\Application as LumenApplication;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -51,28 +49,22 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     /**
      * Boot package services.
      *
-     * @param Kernel           $kernel
-     * @param ConfigRepository $config
-     * @param EventsDispatcher $events
-     *
      * @return void
      */
-    public function boot(Kernel $kernel, ConfigRepository $config, EventsDispatcher $events): void
+    public function boot(): void
     {
-        $this->bootEventListeners($config, $events);
-        $this->bootMiddlewares($kernel);
+        $this->bootEventListeners();
+        $this->bootMiddlewares();
     }
 
     /**
-     * @param ConfigRepository $config
-     * @param EventsDispatcher $events
-     *
      * @return void
      */
-    protected function bootEventListeners(ConfigRepository $config, EventsDispatcher $events): void
+    protected function bootEventListeners(): void
     {
         /** @var array<class-string, array<class-string>> $config_listeners */
-        $config_listeners = (array) $config->get(static::getConfigRootKey() . '.listeners');
+        $config_listeners = (array) $this->app['config']->get(static::getConfigRootKey(), '.listeners');
+        $events = app('events');
 
         foreach ($config_listeners as $event => $listeners) {
             foreach (\array_filter(\array_unique($listeners)) as $listener) {
@@ -82,14 +74,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     }
 
     /**
-     * @param Kernel $kernel
-     *
      * @return void
      */
-    protected function bootMiddlewares(Kernel $kernel): void
+    protected function bootMiddlewares(): void
     {
-        if ($kernel instanceof \Illuminate\Foundation\Http\Kernel) {
-            $kernel->pushMiddleware(Dumper\Middleware::class);
+        if ($this->app instanceof LumenApplication) {
+            $this->app->middleware([Dumper\Middleware::class]);
         }
     }
 

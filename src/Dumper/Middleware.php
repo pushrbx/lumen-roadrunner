@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Dumper;
+namespace pushrbx\LumenRoadRunner\Dumper;
 
 use Closure;
 use Symfony\Component\HttpFoundation\Request;

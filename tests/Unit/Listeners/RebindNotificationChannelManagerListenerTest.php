@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Notifications\ChannelManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindNotificationChannelManagerListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindNotificationChannelManagerListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindNotificationChannelManagerListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindNotificationChannelManagerListener
  */
 class RebindNotificationChannelManagerListenerTest extends AbstractListenerTestCase
 {
