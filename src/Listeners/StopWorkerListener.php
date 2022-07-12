@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Spiral\RoadRunner\Http\PSR7Worker;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
  * Common usage - the worker stopping on an unhandled error occurring.

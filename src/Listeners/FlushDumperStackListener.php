@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
-use Spiral\RoadRunnerLaravel\Dumper\Stack\StackInterface;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Dumper\Stack\StackInterface;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
  * You should not to register this listener manually.
  *
- * @see \Spiral\RoadRunnerLaravel\Dumper\Dumper
+ * @see \pushrbx\LumenRoadRunner\Dumper\Dumper
  */
 class FlushDumperStackListener implements ListenerInterface
 {

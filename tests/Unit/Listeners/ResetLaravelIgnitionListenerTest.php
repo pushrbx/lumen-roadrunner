@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Spatie\LaravelIgnition\Recorders;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\ResetLaravelIgnitionListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetLaravelIgnitionListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetLaravelIgnitionListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetLaravelIgnitionListener
  */
 class ResetLaravelIgnitionListenerTest extends AbstractListenerTestCase
 {

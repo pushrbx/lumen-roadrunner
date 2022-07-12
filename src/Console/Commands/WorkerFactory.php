@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Console\Commands;
+namespace pushrbx\LumenRoadRunner\Console\Commands;
 
 use Spiral\RoadRunner\Environment;
-use Spiral\RoadRunnerLaravel\ServiceProvider;
-use Spiral\RoadRunnerLaravel\WorkerInterface;
+use pushrbx\LumenRoadRunner\ServiceProvider;
+use pushrbx\LumenRoadRunner\WorkerInterface;
 
 class WorkerFactory
 {

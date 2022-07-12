@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Support\Str;
-use Spiral\RoadRunnerLaravel\Listeners\CloneConfigListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\CloneConfigListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\CloneConfigListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\CloneConfigListener
  */
 class CloneConfigListenerTest extends AbstractListenerTestCase
 {

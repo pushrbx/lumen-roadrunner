@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Dumper\Exceptions;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Dumper\Exceptions;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\FixedArrayStack;
-use Spiral\RoadRunnerLaravel\Dumper\Exceptions\DumperException;
+use pushrbx\LumenRoadRunner\Dumper\Stack\FixedArrayStack;
+use pushrbx\LumenRoadRunner\Dumper\Exceptions\DumperException;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Dumper\Exceptions\DumperException
+ * @covers \pushrbx\LumenRoadRunner\Dumper\Exceptions\DumperException
  */
-class DumperExceptionTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class DumperExceptionTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     public function testDefaultCode(): void
     {

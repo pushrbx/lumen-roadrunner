@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Dumper\Stack;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Dumper\Stack;
 
 use Illuminate\Support\Str;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\FixedArrayStack;
+use pushrbx\LumenRoadRunner\Dumper\Stack\FixedArrayStack;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Dumper\Stack\FixedArrayStack
+ * @covers \pushrbx\LumenRoadRunner\Dumper\Stack\FixedArrayStack
  */
-class FixedArrayStackTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class FixedArrayStackTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     public function testPopAndPush(): void
     {

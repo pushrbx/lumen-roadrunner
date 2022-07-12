@@ -1,8 +1,8 @@
 <?php
 
-use Spiral\RoadRunnerLaravel\Events;
-use Spiral\RoadRunnerLaravel\Defaults;
-use Spiral\RoadRunnerLaravel\Listeners;
+use pushrbx\LumenRoadRunner\Events;
+use pushrbx\LumenRoadRunner\Defaults;
+use pushrbx\LumenRoadRunner\Listeners;
 use Spiral\RoadRunner\Environment\Mode;
 
 return [
@@ -115,7 +115,7 @@ return [
     */
 
     'workers' => [
-        Mode::MODE_HTTP => \Spiral\RoadRunnerLaravel\Worker::class,
+        Mode::MODE_HTTP => \pushrbx\LumenRoadRunner\Worker::class,
         // Mode::MODE_JOBS => ...,
         // Mode::MODE_TEMPORAL => ...,
     ],

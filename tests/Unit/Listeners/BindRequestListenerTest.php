@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Symfony\Component\HttpFoundation\Request;
-use Spiral\RoadRunnerLaravel\Listeners\BindRequestListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Listeners\BindRequestListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\BindRequestListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\BindRequestListener
  */
 class BindRequestListenerTest extends AbstractListenerTestCase
 {

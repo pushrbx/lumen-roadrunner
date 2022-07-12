@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Laravel\Telescope\Telescope;
 use Laravel\Telescope\IncomingEntry;
-use Spiral\RoadRunnerLaravel\Listeners\SetupTelescopeListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\SetupTelescopeListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\SetupTelescopeListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\SetupTelescopeListener
  */
 class SetupTelescopeListenerTest extends AbstractListenerTestCase
 {

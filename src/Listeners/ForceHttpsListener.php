@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Illuminate\Routing\UrlGenerator;
-use Spiral\RoadRunnerLaravel\ServiceProvider;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\ServiceProvider;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**

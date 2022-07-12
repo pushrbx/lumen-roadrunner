@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Events;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Events;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts;
-use Spiral\RoadRunnerLaravel\Events\LoopErrorOccurredEvent;
+use pushrbx\LumenRoadRunner\Events\Contracts;
+use pushrbx\LumenRoadRunner\Events\LoopErrorOccurredEvent;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Events\LoopErrorOccurredEvent
+ * @covers \pushrbx\LumenRoadRunner\Events\LoopErrorOccurredEvent
  */
-class LoopErrorOccurredTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class LoopErrorOccurredTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

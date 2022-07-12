@@ -1,23 +1,32 @@
 {
-    "name": "spiral/roadrunner-laravel",
+    "name": "pushrbx/lumen-roadrunner",
     "type": "library",
-    "description": "RoadRunner: Bridge for Laravel applications",
+    "description": "Lumen framework on RoadRunner",
     "keywords": [
         "laravel",
+        "lumen",
         "bridge",
         "roadrunner"
     ],
     "license": "MIT",
     "authors": [
         {
+            "name": "pushrbx",
+            "homepage": "https://github.com/pushrbx"
+        },
+        {
+            "name": "RoadRunner Community",
+            "homepage": "https://github.com/spiral/roadrunner/graphs/contributors"
+        },
+        {
             "name": "tarampampam",
             "homepage": "https://github.com/tarampampam"
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "composer-runtime-api": "^2.0",
-        "laravel/framework": "~8.0 || ~9.0",
+        "laravel/lumen-framework": "^9.0",
         "nyholm/psr7": "^1.5",
         "spiral/roadrunner-http": "^2.0.4",
         "spiral/roadrunner-worker": "^2.1.5",
@@ -27,10 +36,7 @@
         "guzzlehttp/guzzle": "^6.3 || ~7.0",
         "inertiajs/inertia-laravel": "^0.4.2 || ^0.5",
         "tightenco/ziggy": "^1.4.0",
-        "laravel/laravel": "~8.0 || ~9.0",
-        "laravel/scout": "~9.0",
-        "laravel/socialite": "^5.0",
-        "laravel/telescope": "^4.5",
+        "laravel/lumen": "^9.0",
         "livewire/livewire": "^2.7",
         "mockery/mockery": "~1.3.3 || ^1.4.2",
         "phpstan/phpstan": "~1.4",
@@ -38,7 +44,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spiral\\RoadRunnerLaravel\\": "src/"
+            "pushrbx\\LumenRoadRunner\\": "src/"
         },
         "files": [
             "helpers/helpers.php"
@@ -46,7 +52,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spiral\\RoadRunnerLaravel\\Tests\\": "tests/"
+            "pushrbx\\LumenRoadRunner\\Tests\\": "tests/"
         }
     },
     "bin": [
@@ -68,7 +74,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spiral\\RoadRunnerLaravel\\ServiceProvider"
+                "pushrbx\\LumenRoadRunner\\ServiceProvider"
             ]
         }
     },

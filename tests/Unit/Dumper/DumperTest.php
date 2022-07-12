@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Dumper;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Dumper;
 
-use Spiral\RoadRunnerLaravel\Dumper\Dumper;
+use pushrbx\LumenRoadRunner\Dumper\Dumper;
 use Symfony\Component\VarDumper\Cloner\Data;
-use Spiral\RoadRunnerLaravel\Dumper\Stoppers\Noop;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\FixedArrayStack;
-use Spiral\RoadRunnerLaravel\Dumper\Exceptions\DumperException;
+use pushrbx\LumenRoadRunner\Dumper\Stoppers\Noop;
+use pushrbx\LumenRoadRunner\Dumper\Stack\FixedArrayStack;
+use pushrbx\LumenRoadRunner\Dumper\Exceptions\DumperException;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Dumper\Dumper
+ * @covers \pushrbx\LumenRoadRunner\Dumper\Dumper
  */
-class DumperTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class DumperTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     public function testDumpInNonCliMode(): void
     {

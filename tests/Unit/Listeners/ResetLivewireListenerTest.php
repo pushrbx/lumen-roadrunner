@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Livewire\LivewireManager;
-use Spiral\RoadRunnerLaravel\Listeners\ResetLivewireListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetLivewireListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetLivewireListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetLivewireListener
  */
 class ResetLivewireListenerTest extends AbstractListenerTestCase
 {

@@ -2,7 +2,7 @@
 name: Question
 about: Ask anything
 labels: type:question
-assignees: tarampampam
+assignees: pushrbx
 ---
 
 > If you have any questions feel free to ask

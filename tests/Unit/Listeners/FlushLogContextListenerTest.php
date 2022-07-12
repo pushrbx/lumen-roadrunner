@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\FlushLogContextListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\FlushLogContextListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushLogContextListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushLogContextListener
  */
 class FlushLogContextListenerTest extends AbstractListenerTestCase
 {

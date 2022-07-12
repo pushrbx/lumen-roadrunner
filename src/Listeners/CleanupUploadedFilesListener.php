@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 
 /**
  * @link https://github.com/spiral/roadrunner-laravel/issues/84

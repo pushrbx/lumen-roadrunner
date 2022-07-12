@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiral\RoadRunnerLaravel\Application;
+namespace pushrbx\LumenRoadRunner\Application;
 
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 

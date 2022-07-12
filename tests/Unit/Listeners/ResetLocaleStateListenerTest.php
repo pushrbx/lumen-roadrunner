@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Translation\Translator;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Spiral\RoadRunnerLaravel\Listeners\ResetLocaleStateListener;
+use pushrbx\LumenRoadRunner\Listeners\ResetLocaleStateListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetLocaleStateListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetLocaleStateListener
  */
 class ResetLocaleStateListenerTest extends AbstractListenerTestCase
 {

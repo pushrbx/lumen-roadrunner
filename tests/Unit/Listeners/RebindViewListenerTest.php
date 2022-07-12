@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Listeners\RebindViewListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindViewListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindViewListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindViewListener
  */
 class RebindViewListenerTest extends AbstractListenerTestCase
 {

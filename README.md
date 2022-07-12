@@ -1,27 +1,16 @@
-<p align="center">
-  <img src="https://hsto.org/webt/xl/pr/89/xlpr891cyv9ux3gm7dtzwjse_5a.png" alt="logo" width="420" />
-</p>
+# Lumen framework on RoadRunner
 
-# [RoadRunner][roadrunner] ⇆ [Laravel][laravel] bridge
+Easy way for connecting [RoadRunner][roadrunner] and [Lumen][lumen] applications.
+This is a fork of [spiral/roadrunner-laravel](https://github.com/spiral/roadrunner-laravel), which makes it work with lumen instead of the full laravel framework.
 
-[![Version][badge_packagist_version]][link_packagist]
-[![Version][badge_php_version]][link_packagist]
-[![Build Status][badge_build_status]][link_build_status]
-[![Coverage][badge_coverage]][link_coverage]
-[![Downloads count][badge_downloads_count]][link_packagist]
-[![Chat][badge_chat]][link_chat]
-[![License][badge_license]][link_license]
-
-Easy way for connecting [RoadRunner][roadrunner] and [Laravel][laravel] applications.
-
-> 🐋 If you want to see an example of a laravel application in a docker container with RoadRunner as a web server - take a look at [this repository](https://github.com/tarampampam/laravel-roadrunner-in-docker).
+> Please note that this lib is not production ready yet, it's under development.
 
 ## Installation
 
 Make sure that [RR binary file][roadrunner-binary-releases] already installed on your system (or docker image). Require this package with composer using next command:
 
 ```shell script
-$ composer require spiral/roadrunner-laravel
+$ composer require pushrbx/lumen-roadrunner
 ```
 
 > Installed `composer` is required ([how to install composer][getcomposer]).
@@ -29,7 +18,7 @@ $ composer require spiral/roadrunner-laravel
 After that you can "publish" package configuration file (`./config/roadrunner.php`) using next command:
 
 ```shell script
-$ php ./artisan vendor:publish --provider='Spiral\RoadRunnerLaravel\ServiceProvider' --tag=config
+$ php ./artisan vendor:publish --provider='pushrbx\LumenRoadRunner\ServiceProvider' --tag=config
 ```
 
 **Important**: despite the fact that worker allows you to refresh application instance on each HTTP request _(if worker started with option `--refresh-app`, eg.: `php ./vendor/bin/rr-worker start --refresh-app`)_, we strongly recommend avoiding this for performance reasons. Large applications can be hard to integrate with RoadRunner _(you must decide which of service providers must be reloaded on each request, avoid "static optimization" in some cases)_, but it's worth it.
@@ -46,11 +35,11 @@ $ php ./artisan vendor:publish --provider='Spiral\RoadRunnerLaravel\ServiceProvi
 #### **v3.x** &rarr; **v4.x**
 
 - Update current package in your application:
-  - `composer remove spiral/roadrunner-laravel`
-  - `composer require spiral/roadrunner-laravel "^4.0"`
+    - `composer remove spiral/roadrunner-laravel`
+    - `composer require spiral/roadrunner-laravel "^4.0"`
 - Update your `.rr.yaml` config (take a look for sample [here][roadrunner_config]) - a lot of options was changed
-  - Optionally change relay to socket or TCP port:
-    > ```yaml
+    - Optionally change relay to socket or TCP port:
+      > ```yaml
     > server:
     >   command: "php ./vendor/bin/rr-worker start --relay-dsn unix:///var/run/rr-relay.sock"
     >   relay: "unix:///var/run/rr-relay.sock"
@@ -290,18 +279,11 @@ $ make test
 [![Release date][badge_release_date]][link_releases]
 [![Commits since latest release][badge_commits_since_release]][link_commits]
 
-Changes log can be [found here][link_changes_log].
-
-## Support
-
-[![Issues][badge_issues]][link_issues]
-[![Issues][badge_pulls]][link_pulls]
-
 If you find any package errors, please, [make an issue][link_create_issue] in a current repository.
 
 ## License
 
-MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information. Maintained by [tarampampam](https://github.com/tarampampam) and [Spiral Scout](https://spiralscout.com).
+MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information. Maintained by [pushrbx](https://github.com/pushrbx).
 
 [badge_packagist_version]:https://img.shields.io/packagist/v/spiral/roadrunner-laravel.svg?maxAge=180
 [badge_php_version]:https://img.shields.io/packagist/php-v/spiral/roadrunner-laravel.svg?longCache=true
@@ -318,17 +300,15 @@ MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information. Maint
 [link_packagist]:https://packagist.org/packages/spiral/roadrunner-laravel
 [link_build_status]:https://github.com/spiral/roadrunner-laravel/actions
 [link_chat]:https://discord.gg/Y3df23vJDw
-[link_coverage]:https://codecov.io/gh/spiral/roadrunner-laravel/
-[link_changes_log]:https://github.com/spiral/roadrunner-laravel/blob/master/CHANGELOG.md
 [link_issues]:https://github.com/spiral/roadrunner-laravel/issues
-[link_create_issue]:https://github.com/spiral/roadrunner-laravel/issues/new/choose
+[link_create_issue]:https://github.com/pushrbx/lumen-roadrunner/issues/new/choose
 [link_commits]:https://github.com/spiral/roadrunner-laravel/commits
 [link_pulls]:https://github.com/spiral/roadrunner-laravel/pulls
 [link_license]:https://github.com/spiral/roadrunner-laravel/blob/master/LICENSE
 [getcomposer]:https://getcomposer.org/download/
 [roadrunner]:https://github.com/roadrunner-server/roadrunner
 [roadrunner_config]:https://github.com/roadrunner-server/roadrunner/blob/master/.rr.yaml
-[laravel]:https://laravel.com
+[lumen]:https://lumen.laravel.com
 [laravel_events]:https://laravel.com/docs/events
 [roadrunner-cli]:https://github.com/spiral/roadrunner-cli
 [roadrunner-binary-releases]:https://github.com/roadrunner-server/roadrunner/releases

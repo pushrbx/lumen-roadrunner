@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Dumper\Stoppers;
+namespace pushrbx\LumenRoadRunner\Dumper\Stoppers;
 
 /**
  * @internal

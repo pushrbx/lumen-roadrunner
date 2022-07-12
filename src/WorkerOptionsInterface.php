@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiral\RoadRunnerLaravel;
+namespace pushrbx\LumenRoadRunner;
 
 interface WorkerOptionsInterface
 {

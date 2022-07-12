@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Symfony\Component\HttpFoundation\Request;
-use Spiral\RoadRunnerLaravel\Listeners\SetServerPortListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Listeners\SetServerPortListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\SetServerPortListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\SetServerPortListener
  */
 class SetServerPortListenerTest extends AbstractListenerTestCase
 {

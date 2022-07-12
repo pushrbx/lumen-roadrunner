@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Events;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Events;
 
 use Illuminate\Http\Request;
-use Spiral\RoadRunnerLaravel\Events\Contracts;
-use Spiral\RoadRunnerLaravel\Events\BeforeRequestHandlingEvent;
+use pushrbx\LumenRoadRunner\Events\Contracts;
+use pushrbx\LumenRoadRunner\Events\BeforeRequestHandlingEvent;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Events\BeforeRequestHandlingEvent
+ * @covers \pushrbx\LumenRoadRunner\Events\BeforeRequestHandlingEvent
  */
-class BeforeRequestHandlingEventTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class BeforeRequestHandlingEventTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

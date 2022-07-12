@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Dumper\Exceptions;
+namespace pushrbx\LumenRoadRunner\Dumper\Exceptions;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Symfony\Component\VarDumper\Dumper\HtmlDumper;
 use Symfony\Component\VarDumper\Dumper\AbstractDumper;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\StackInterface;
+use pushrbx\LumenRoadRunner\Dumper\Stack\StackInterface;
 
 /**
  * @internal

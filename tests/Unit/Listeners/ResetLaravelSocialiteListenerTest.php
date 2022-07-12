@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Laravel\Socialite\SocialiteManager;
 use Laravel\Socialite\Contracts\Factory as SocialiteFactory;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Spiral\RoadRunnerLaravel\Listeners\ResetLaravelSocialiteListener;
+use pushrbx\LumenRoadRunner\Listeners\ResetLaravelSocialiteListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetLaravelSocialiteListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetLaravelSocialiteListener
  */
 class ResetLaravelSocialiteListenerTest extends AbstractListenerTestCase
 {

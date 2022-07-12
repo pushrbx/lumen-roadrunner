@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit;
+namespace pushrbx\LumenRoadRunner\Tests\Unit;
 
 use Spiral\RoadRunner\Http\PSR7Worker;
-use Spiral\RoadRunnerLaravel\Dumper\Dumper;
+use pushrbx\LumenRoadRunner\Dumper\Dumper;
 
-class HelpersTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class HelpersTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @covers ::\rr\dump

@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Routing\UrlGenerator;
 use Symfony\Component\HttpFoundation\Request;
-use Spiral\RoadRunnerLaravel\Listeners\ForceHttpsListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Listeners\ForceHttpsListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ForceHttpsListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ForceHttpsListener
  */
 class ForceHttpsListenerTest extends AbstractListenerTestCase
 {

@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Contracts\Pipeline\Hub;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindPipelineHubListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindPipelineHubListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindPipelineHubListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindPipelineHubListener
  */
 class RebindPipelineHubListenerTest extends AbstractListenerTestCase
 {

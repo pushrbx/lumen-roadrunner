@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Laravel\Socialite\Contracts\Factory as SocialiteFactory;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
  * Target package: <https://github.com/laravel/socialite/>.

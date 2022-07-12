@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Illuminate\Broadcasting\BroadcastManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
  * @link https://github.com/laravel/octane/blob/1.x/src/Listeners/GiveNewApplicationInstanceToBroadcastManager.php

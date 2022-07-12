@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Support\Str;
 use Illuminate\Cache\CacheManager;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Spiral\RoadRunnerLaravel\Listeners\FlushArrayCacheListener;
+use pushrbx\LumenRoadRunner\Listeners\FlushArrayCacheListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\FlushArrayCacheListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\FlushArrayCacheListener
  */
 class FlushArrayCacheListenerTest extends AbstractListenerTestCase
 {

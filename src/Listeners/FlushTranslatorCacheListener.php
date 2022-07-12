@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
 use Illuminate\Translation\Translator;
 use Illuminate\Support\NamespacedItemResolver;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
  * @link https://github.com/laravel/octane/pull/416/files

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners\Traits;
+namespace pushrbx\LumenRoadRunner\Listeners\Traits;
 
 /**
  * @internal

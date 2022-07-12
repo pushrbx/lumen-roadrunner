@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Listeners\ResetSessionListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetSessionListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetSessionListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetSessionListener
  */
 class ResetSessionListenerTest extends AbstractListenerTestCase
 {

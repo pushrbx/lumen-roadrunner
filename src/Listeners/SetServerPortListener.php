@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithHttpRequest;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithHttpRequest;
 
 /**
  * This listener must be registered AFTER `ForceHttpsListener` for correct links generation.

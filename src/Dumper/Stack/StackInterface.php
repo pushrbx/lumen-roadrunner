@@ -1,6 +1,6 @@
 <?php
 
-namespace Spiral\RoadRunnerLaravel\Dumper\Stack;
+namespace pushrbx\LumenRoadRunner\Dumper\Stack;
 
 /**
  * Last-In First-Out stack.

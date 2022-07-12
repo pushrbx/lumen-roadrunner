@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\ResetDatabaseRecordModificationStateListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetDatabaseRecordModificationStateListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetDatabaseRecordModificationStateListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetDatabaseRecordModificationStateListener
  */
 class ResetDatabaseRecordModificationStateListenerTest extends AbstractListenerTestCase
 {

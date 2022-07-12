@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit;
+namespace pushrbx\LumenRoadRunner\Tests\Unit;
 
-use Spiral\RoadRunnerLaravel\Dumper\Dumper;
-use Spiral\RoadRunnerLaravel\ServiceProvider;
-use Spiral\RoadRunnerLaravel\Dumper\Middleware;
+use pushrbx\LumenRoadRunner\Dumper\Dumper;
+use pushrbx\LumenRoadRunner\ServiceProvider;
+use pushrbx\LumenRoadRunner\Dumper\Middleware;
 use Illuminate\Contracts\Http\Kernel as HttpKernel;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\StackInterface;
-use Spiral\RoadRunnerLaravel\Dumper\Stack\FixedArrayStack;
+use pushrbx\LumenRoadRunner\Dumper\Stack\StackInterface;
+use pushrbx\LumenRoadRunner\Dumper\Stack\FixedArrayStack;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
 use Illuminate\Support\ServiceProvider as IlluminateServiceProvider;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\ServiceProvider
+ * @covers \pushrbx\LumenRoadRunner\ServiceProvider
  */
-class ServiceProviderTest extends \Spiral\RoadRunnerLaravel\Tests\AbstractTestCase
+class ServiceProviderTest extends \pushrbx\LumenRoadRunner\Tests\AbstractTestCase
 {
     /**
      * @return void

@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 labels: type:bug
-assignees: tarampampam
+assignees: pushrbx
 ---
 
 ## Describe the bug
@@ -25,12 +25,12 @@ assignees: tarampampam
 
 > Please, complete the following information:
 
-Key                     | Value
------------------------ | ----
-PHP version             | <!-- e.g. `8.0.3` -->
-Current package version | <!-- e.g. `4.0.0` -->
-RoadRunner version      | <!-- e.g. `2.0.1` -->
-Environment             | <!-- e.g. `docker`, `local`, `aws` -->
+| Key                     | Value                                  |
+|-------------------------|----------------------------------------|
+| PHP version             | <!-- e.g. `8.0.3` -->                  |
+| Current package version | <!-- e.g. `4.0.0` -->                  |
+| RoadRunner version      | <!-- e.g. `2.0.1` -->                  |
+| Environment             | <!-- e.g. `docker`, `local`, `aws` --> |
 
 ### RoadRunner configuration file content
 

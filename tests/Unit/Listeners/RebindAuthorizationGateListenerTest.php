@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Contracts\Auth\Access\Gate;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\RebindAuthorizationGateListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\RebindAuthorizationGateListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\RebindAuthorizationGateListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\RebindAuthorizationGateListener
  */
 class RebindAuthorizationGateListenerTest extends AbstractListenerTestCase
 {

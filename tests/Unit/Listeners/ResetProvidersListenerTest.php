@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Contracts\Foundation\Application;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\ResetProvidersListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetProvidersListener;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetProvidersListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetProvidersListener
  */
 class ResetProvidersListenerTest extends AbstractListenerTestCase
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Listeners;
+namespace pushrbx\LumenRoadRunner\Listeners;
 
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithException;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithException;
 
 class SendExceptionToStderrListener implements ListenerInterface
 {

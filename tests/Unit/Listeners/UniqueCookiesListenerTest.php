@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Listeners\UnqueueCookiesListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\UnqueueCookiesListener;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\UnqueueCookiesListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\UnqueueCookiesListener
  */
 class UniqueCookiesListenerTest extends AbstractListenerTestCase
 {

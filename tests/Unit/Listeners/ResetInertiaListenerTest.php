@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Tests\Unit\Listeners;
+namespace pushrbx\LumenRoadRunner\Tests\Unit\Listeners;
 
 use Mockery as m;
 use Illuminate\Support\Str;
 use Inertia\ResponseFactory as InertiaResponseFactory;
-use Spiral\RoadRunnerLaravel\Listeners\ResetInertiaListener;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Listeners\ResetInertiaListener;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
 
 /**
- * @covers \Spiral\RoadRunnerLaravel\Listeners\ResetInertiaListener
+ * @covers \pushrbx\LumenRoadRunner\Listeners\ResetInertiaListener
  */
 class ResetInertiaListenerTest extends AbstractListenerTestCase
 {

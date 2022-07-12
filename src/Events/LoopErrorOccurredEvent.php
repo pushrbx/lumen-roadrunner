@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Events;
+namespace pushrbx\LumenRoadRunner\Events;
 
 use Throwable;
 use Psr\Http\Message\ServerRequestInterface;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithException;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithApplication;
-use Spiral\RoadRunnerLaravel\Events\Contracts\WithServerRequest;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithException;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithApplication;
+use pushrbx\LumenRoadRunner\Events\Contracts\WithServerRequest;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 
 final class LoopErrorOccurredEvent implements WithApplication, WithException, WithServerRequest

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Spiral\RoadRunnerLaravel\Dumper\Stack;
+namespace pushrbx\LumenRoadRunner\Dumper\Stack;
 
 /**
  * Last-In First-Out stack implementation.
