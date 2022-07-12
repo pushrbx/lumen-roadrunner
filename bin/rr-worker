@@ -61,7 +61,7 @@ if ($loaded !== true) {
 /** @var string|null $base_path */
 $base_path = null;
 
-foreach (['../../../..', '../../..', '../..', '..', '../vendor/laravel/laravel'] as $path) {
+foreach (['../../../..', '../../..', '../..', '..', '../vendor/laravel/lumen-framework'] as $path) {
     if (\is_file(__DIR__ . '/' . $path . '/bootstrap/app.php')) {
         $base_path = (string) \realpath(__DIR__ . '/' . $path);
         break;
@@ -79,9 +79,9 @@ foreach (['../../../..', '../../..', '../..', '..', '../vendor/laravel/laravel']
 
 $app = new \Symfony\Component\Console\Application(
     'RoadRunner worker',
-    \Composer\InstalledVersions::getPrettyVersion('spiral/roadrunner-laravel') ?? 'unknown'
+    \Composer\InstalledVersions::getPrettyVersion('pushrbx/lumen-roadrunner') ?? 'unknown'
 );
 
-$app->add(new \Spiral\RoadRunnerLaravel\Console\Commands\StartCommand($base_path));
+$app->add(new \pushrbx\LumenRoadRunner\Console\Commands\StartCommand($base_path));
 
 $app->run();
