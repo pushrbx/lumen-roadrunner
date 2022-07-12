@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace pushrbx\LumenRoadRunner\Application;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Illuminate\Contracts\Foundation\Application as ApplicationContract;
+use Laravel\Lumen\Application as ApplicationContract;
 
 /**
  * @internal
