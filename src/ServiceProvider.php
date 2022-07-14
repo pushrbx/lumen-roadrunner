@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace pushrbx\LumenRoadRunner;
 
+use Illuminate\Config\Repository as ConfigRepository;
 use Laravel\Lumen\Application as LumenApplication;
+use Illuminate\Contracts\Events\Dispatcher as EventsDispatcher;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -62,9 +64,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     protected function bootEventListeners(): void
     {
+        /** @var ConfigRepository $config */
+        $config = $this->app->get('config');
         /** @var array<class-string, array<class-string>> $config_listeners */
-        $config_listeners = (array) $this->app['config']->get(static::getConfigRootKey(), '.listeners');
-        $events = app('events');
+        $config_listeners = (array) $config->get(static::getConfigRootKey(), '.listeners');
+        /** @var EventsDispatcher $events */
+        $events = $this->app->make(EventsDispatcher::class);
 
         foreach ($config_listeners as $event => $listeners) {
             foreach (\array_filter(\array_unique($listeners)) as $listener) {
