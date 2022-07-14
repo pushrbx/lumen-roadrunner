@@ -123,7 +123,7 @@ class Worker implements WorkerInterface
 
                 $this->fireEvent($sandbox, new Events\LoopErrorOccurredEvent($sandbox, $req, $e));
             } finally {
-                unset($http_kernel, $response, $request, $sandbox);
+                unset($response, $request, $sandbox);
 
                 $this->setApplicationInstance($app);
             }
@@ -190,7 +190,7 @@ class Worker implements WorkerInterface
         Container::setInstance($app);
 
         Facade::clearResolvedInstances();
-        Facade::setFacadeApplication($app);
+        $app->withFacades();
     }
 
     /**
