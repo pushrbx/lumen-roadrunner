@@ -70,7 +70,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         /** @var ConfigRepository $config */
         $config = $this->app->get('config');
         /** @var array<class-string, array<class-string>> $config_listeners */
-        $config_listeners = (array) $config->get(static::getConfigRootKey(), '.listeners');
+        $config_listeners = (array) $config->get(static::getConfigRootKey() . '.listeners');
         /** @var EventsDispatcher $events */
         $events = $this->app->make(EventsDispatcher::class);
 
