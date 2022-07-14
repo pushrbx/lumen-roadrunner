@@ -57,6 +57,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->bootEventListeners();
         $this->bootMiddlewares();
+
+        $this->publishes([
+            \realpath(static::getConfigPath()) => $this->app->configPath(\basename(static::getConfigPath())),
+        ], 'config');
     }
 
     /**
@@ -99,9 +103,5 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     protected function initializeConfigs(): void
     {
         $this->mergeConfigFrom(static::getConfigPath(), static::getConfigRootKey());
-
-        $this->publishes([
-            \realpath(static::getConfigPath()) => $this->app->configPath(\basename(static::getConfigPath())),
-        ], 'config');
     }
 }
