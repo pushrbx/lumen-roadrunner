@@ -93,7 +93,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->mergeConfigFrom(static::getConfigPath(), static::getConfigRootKey());
 
         $this->publishes([
-            \realpath(static::getConfigPath()) => config_path(\basename(static::getConfigPath())),
+            \realpath(static::getConfigPath()) => $this->app->configPath(\basename(static::getConfigPath())),
         ], 'config');
     }
 }
