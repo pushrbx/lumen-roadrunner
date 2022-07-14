@@ -61,6 +61,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     /**
      * @return void
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
+     * @throws \Psr\Container\ContainerExceptionInterface
+     * @throws \Psr\Container\NotFoundExceptionInterface
      */
     protected function bootEventListeners(): void
     {
