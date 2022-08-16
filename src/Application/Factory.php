@@ -29,6 +29,9 @@ final class Factory implements FactoryInterface
         /** @var ApplicationContract $app */
         $app = require $path;
 
+        // boot service providers early
+        $app->boot();
+
         return $app;
     }
 }
