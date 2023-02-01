@@ -113,7 +113,7 @@ class Worker implements WorkerInterface
 
                 $psr7_worker->respond($this->http_factory_psr7->createResponse($response));
                 $responded = true;
-                // $http_kernel->terminate($request, $response);
+                $sandbox->terminate();
 
                 $this->fireEvent($sandbox, new Events\AfterLoopIterationEvent($sandbox, $request, $response));
             } catch (Throwable $e) {
