@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace pushrbx\LumenRoadRunner;
 
 use Throwable;
-use Illuminate\Http\Request;
+use Laravel\Lumen\Http\Request;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Facade;
 use Spiral\RoadRunner\Http\PSR7Worker;
